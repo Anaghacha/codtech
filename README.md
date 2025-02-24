@@ -1,10 +1,15 @@
 # codtech
 This repository consists of the 4 tasks that were to be done for INTERNET OF THINGS :
-**COMPANY : CODTECH IT SOLUTIONS ** 
+**COMPANY : CODTECH IT SOLUTIONS**     
+
  **NAME :ANAGHA CHALLA**
+ 
 **INTERN ID : CT12GDM**
+
 **DOMAIN : INTERNET OF THINGS**
+
 **DURATION : 8 WEEKS**
+
 **MENTOR:Neela Santhosh Kumar**
 
 
