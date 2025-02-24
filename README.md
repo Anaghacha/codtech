@@ -1,11 +1,11 @@
 # codtech
 This repository consists of the 4 tasks that were to be done for INTERNET OF THINGS :
-COMPANY : CODTECH IT SOLUTIONS 
-NAME :ANAGHA CHALLA
-INTERN ID : CT12GDM
-DOMAIN : INTERNET OF THINGS 
-DURATION : 8 WEEKS 
-MENTOR:Neela Santhosh Kumar
+**COMPANY : CODTECH IT SOLUTIONS ** 
+ **NAME :ANAGHA CHALLA**
+**INTERN ID : CT12GDM**
+**DOMAIN : INTERNET OF THINGS**
+**DURATION : 8 WEEKS**
+**MENTOR:Neela Santhosh Kumar**
 
 
 # TASK 1 :SMART LIGHT CONTROL 
@@ -34,43 +34,15 @@ This project allows you to control an LED connected to an Arduino board using Se
    - Enter **"ON"** to turn the LED on.
    - Enter **"OFF"** to turn the LED off.
 
-## Code
-```cpp
-#define LED_PIN 9  // LED connected to pin 9
 
-void setup() {
-    Serial.begin(9600);  // Start Serial Communication
-    pinMode(LED_PIN, OUTPUT);
-    Serial.println("Enter 'ON' to turn on LED, 'OFF' to turn it off");
-}
-
-void loop() {
-    if (Serial.available()) {
-        String command = Serial.readStringUntil('\n');  // Read Serial Input
-        command.trim();  // Remove any extra spaces or newlines
-        
-        if (command == "ON") {
-            digitalWrite(LED_PIN, HIGH);
-            Serial.println("LED Turned ON");
-        } 
-        else if (command == "OFF") {
-            digitalWrite(LED_PIN, LOW);
-            Serial.println("LED Turned OFF");
-        } 
-        else {
-            Serial.println("Invalid Command. Use 'ON' or 'OFF'");
-        }
-    }
-}
-
-#TASK 2 :HOME AUTOMATION SYSTEM
-IR Remote-Controlled Home Automation System
+# TASK 2 :HOME AUTOMATION SYSTEM
+ # IR Remote-Controlled Home Automation System
 
 Overview
 
 This project implements a home automation system using an Arduino, an IR receiver, and an LCD display. The system allows users to control appliances such as a TV, light, fan, and motor using an IR remote.
 
-Components Used
+# Components Used
 
 Arduino Uno: Microcontroller to process IR signals and control appliances
 
@@ -90,7 +62,7 @@ Resistors and Jumper Wires: For circuit connections
 
 Power Supply: Powers the Arduino and components
 
-Features
+# Features
 
 Control appliances using an IR remote
 
@@ -112,7 +84,7 @@ Relays to control appliances.
 
 LEDs used to simulate real appliances.
 
-Installation and Setup
+# Installation and Setup
 
 Wiring: Connect components as per the circuit diagram.
 
@@ -139,6 +111,8 @@ Expanding to control more appliances.
 License
 
 This project is open-source and can be modified and shared freely.
+
+
 # TASK 3 : IOT SECURITY SYSTEM
 This project uses a **PIR motion sensor** to detect motion. When motion is detected, an LED turns on, a buzzer sounds, and a message is displayed on the **Serial Monitor**.
 
@@ -177,49 +151,7 @@ This project uses a **PIR motion sensor** to detect motion. When motion is detec
    - The Serial Monitor will display **"Motion detected!"**.  
    - When motion stops, the Serial Monitor will display **"Motion stopped!"**.  
 
-## Code
-```cpp
-int led = 9;
-int sensor = 8;
-int buzzer = 10;
-int state = LOW;
-int val = 0;
 
-void setup()
-{
-  pinMode(led, OUTPUT);
-  pinMode(sensor, INPUT);
-  pinMode(buzzer, OUTPUT);
-  Serial.begin(9600);
-}
-
-void loop()
-{
-  val = digitalRead(sensor);
-  if (val == HIGH)
-  {
-    // check if the sensor is HIGH
-    digitalWrite(led, HIGH);
-    delay(100);
-    if (state == LOW)
-    {
-      Serial.println("Motion detected!");
-      tone(buzzer, 1000);
-      state = HIGH;
-    }
-  }
-  else
-  {
-    digitalWrite(led, LOW);
-    delay(200);
-    if (state == HIGH)
-    {
-      Serial.println("Motion stopped!");
-      noTone(buzzer);
-      state = LOW;
-    }
-  }
-}
 
 #  TASK 4 :IoT Air Quality Monitor 🚀
 
