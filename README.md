@@ -1,1 +1,6 @@
 # codtech
+This repository consists of the 4 tasks that were to be done for INTERNET OF THINGS :
+SMART LIGHT CONTROL
+HOME AUTOMATION SYSTEM
+IOT SECURITY SYSTEM
+IOT AIR QUALITY MONITOR
